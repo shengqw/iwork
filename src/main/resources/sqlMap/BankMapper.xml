@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.com/dtd/mybatis-3-mapper.dtd"> 
+    
+<mapper namespace="bank">
+	<select id="getBankById" parameterType="String" resultType="com.qiwen.web.po.Bank">
+	select id,name,code from t_bank where id = #{id}
+	</select>
+	
+<!-- 	<select id="getBankByName" parameterType="String" resultType="org.jeecgframework.web.sanxiang.po.TBank"> -->
+<!-- 	select id,name,code from t_bank where name like '${value}' -->
+<!-- 	</select> -->
+	
+<!-- 	<insert id="insertBank" parameterType="org.jeecgframework.web.sanxiang.po.TBank" > -->
+<!-- 	insert into t_bank(id,name,code) values(#{id},#{name},#{code}); -->
+<!-- 	</insert> -->
+	
+
+</mapper>
